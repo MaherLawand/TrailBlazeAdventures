@@ -1,0 +1,623 @@
+.guide-details {
+    text-align: left;
+  }
+  
+  .guide-details h2,
+  .guide-details p {
+    text-align: left;
+  }
+
+ 
+  .img-content{
+    display: flex;
+    flex-direction: column;
+    gap: -20px;
+    height: 100%;
+    width: 100%;
+  }
+  .img-content > :nth-child(odd) {
+    margin-bottom: 2px; /* Adjust the negative margin as needed */
+  }
+  .img-content > :nth-child(even) {
+    margin-top: 2px;
+    font-size: 0.85em;  
+   }
+  
+  .first-column-div{
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .second-column{
+    display: flex;
+    justify-content: center;
+  }
+  .second-column-div{
+    height: 350px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    max-height: 300px; /* Set a maximum height for the images */
+    object-fit: cover;
+  }
+  
+  .img-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .img-fluid {
+    position: relative;
+    width: 100%;
+    height: auto;
+    transition: filter 0.5s; /* Add a smooth transition effect for filter property */
+  }
+  
+  .img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .img-div-wrapper:hover .img-overlay {
+    opacity: 1;
+  }
+  
+  .img-div-wrapper:hover .img-fluid {
+    filter: brightness(70%); /* Apply brightness reduction on hover */
+  }
+  .img-div-wrapper {
+    box-sizing: border-box;
+    padding-top: 35px;
+  }
+  
+  .title-desc-wrapper {
+    box-sizing: border-box;
+    padding: 35px;
+  }
+  
+/* Apply margin to second and third Swiper slides */
+// .swiper-slide:nth-child(2),
+// .swiper-slide:nth-child(3) {
+//   box-sizing: border-box;
+//   margin-top: 50px;
+// }
+.page-header-work{
+  position: relative;
+    height: 100%;
+    overflow: hidden;
+    border-top: 1px solid #9db7fecc;
+}
+
+.svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+  }
+  
+  .row-wrapper{
+      margin-right: 30px; /* Adjust the value to control the gap between columns */
+    margin-left: 30px;
+  
+    &.aboutus{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+ 
+
+  
+
+  //About Us Section
+  .first-div {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    > h1 {
+      color: #0b323f;
+    }
+  
+    > .blue-line {
+      color: #0b323f;
+      position: relative;
+      width: fit-content;
+    }
+  
+    > .blue-line::before,
+    > .blue-line::after {
+      content: "";
+      position: absolute;
+      width: 35px;
+      height: 2px;
+      background-color: #0b323f;
+    }
+  
+    > .blue-line::before {
+      top: 12px;
+      left: -50px;
+    }
+  
+    > .blue-line::after {
+      top: 12px;
+      right: -50px;
+    }
+  }
+  .css-1fderfv-MuiPaper-root-MuiAccordion-root{
+    background-color: transparent !important;
+    border: 0px !important;
+  }
+  .css-1betqn-MuiAccordionSummary-content{
+    background-color: transparent !important;
+  }
+  .css-18wu24f-MuiButtonBase-root-MuiAccordionSummary-root{
+    background-color: transparent !important;
+  }
+  .css-1fderfv-MuiPaper-root-MuiAccordion-root:not(:first-child) {
+    border-top: 1px solid black;
+  }
+  #about-us{
+    font-family:AutumnDays-PersonalUse-Regular ;
+    font-size: 4em;
+  }
+  #about-us-slogan{
+    font-family: LeafCrownDemoRegular;
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+  .aboutus-desc{
+    font-family: FallIsComingRegular;
+    font-weight:lighter;
+    font-size: 1.6em;
+  }
+  
+
+  //Page Header
+
+  .ml1 {
+    font-weight: 900;
+    font-size: 3.5em;
+  }
+  
+  .ml1 .letter .ml12 {
+    display: inline-block;
+    line-height: 1em;
+  }
+  
+  .ml1 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+  }
+  
+  .ml1 .line {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    transform-origin: 0 0;
+  }
+  
+  .ml1 .line1 { top: 0; }
+  .ml1 .line2 { bottom: 0; }
+
+  #trailblaze-adventures {
+    color: #fff;
+    font-family:NeueMachina-UltraBold;
+    font-size: 3.5em;
+  }
+  #slogan{
+    font-family:ShapiroLight;
+  }
+
+
+  //404 Not Found
+  .NotFound{
+    height: 100vh;
+    background-image: url(../../../../public/Images/Hiking/Lost3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  //Unauthorized
+  .Unauthorized{
+    height: 100vh;
+    background-image: url(../../../../public/Images/Hiking/unauthorized.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+
+
+  //Footer
+  .title{
+    font-size: 2em;
+    font-family:NeueMachina-UltraBold;
+  }
+  .footer-desc{
+    font-family:ShapiroLight;
+  }
+
+  //EventShowCase
+  #latest-events{
+    font-family:NeueMachina-UltraBold;
+  }
+  #latest-events-desc{
+    font-family:ShapiroLight;
+    font-weight: bolder;
+  }
+  .event-header{
+    font-family:NeueMachina-UltraBold;
+    font-size: 0.8em;
+  }
+  .event-data{
+    font-family:ShapiroLight;
+    font-weight: bolder;
+    font-size: 0.7em;
+  }
+  .page-header-work{  &.eventShowCase{
+    background-color: #e8eff5;
+   }}
+
+   .event-data{
+    color: rgb(124, 173, 196);
+  }
+  .top-left-content {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    background-color:  #0b323f;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 10px;
+    color: rgb(124, 173, 196);
+  }
+  
+  .bottom-left-content {
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    background-color:  #0b323f;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 5px;
+    padding-left:15px ;
+    padding-right:15px ;
+    padding-top:15px ;
+    bottom: -10px;
+    left: 15px;
+    color: white;
+  }
+
+  //Modal
+  .modal-content{
+    background: rgba(92, 119, 127, 0.61) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+    backdrop-filter: blur(6.9px) !important;
+    -webkit-backdrop-filter: blur(6.9px) !important;
+  }
+  .modal-title{
+    color:#1976d2 !important;
+  }
+  // .css-10lvcmn-MuiInputBase-root-MuiInput-root:before{
+  //   border-bottom: 1px solid white !important;
+  // }
+  .MuiFormLabel-root{
+    color: rgb(224, 224, 224) !important;
+  }
+.MuiInputLabel-shrink{
+    color:#1976d2 !important;
+}
+.MuiInputBase-input{
+  color: white !important;
+}
+.css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root{
+  width: 83% !important;
+  overflow: hidden !important;
+}
+.css-a643pv-MuiStack-root{
+  overflow: hidden !important;
+}
+.file-upload-wrapper {
+  $defaultColor:#0b323f;
+  $height: 70px;
+  
+  position: relative;
+  width: 100%;
+  height: $height;
+  
+  &:after {
+    content: attr(data-text);
+    font-size: 1em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ffffff00;
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    display: block;
+    padding-left: 10px;
+    width: calc(100% - 40px);
+    pointer-events: none;
+    z-index: 20;
+    height: $height - 20px;
+    line-height: $height - 20px;
+    color: #ffffff9d;
+    border-radius: 5px 10px 10px 5px;
+    font-weight: 300;
+  }
+  
+  &:before {
+    content: 'Upload';
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    height: 50px;
+    background: $defaultColor;
+    color: #fff;
+    font-weight: 700;
+    z-index: 25;
+    font-size: 0.7em;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 50px;
+    text-transform: uppercase;
+    pointer-events: none;
+    border-radius: 0 5px 5px 0;
+  }
+  
+  &:hover {
+    &:before {
+      background: darken($defaultColor, 10%);
+    }
+  }
+   input {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    height: $height - 20px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    cursor: pointer;
+    width: 100%;
+  }
+}
+
+
+
+
+
+//Admin Dashboard
+.css-12i7wg6-MuiPaper-root-MuiDrawer-paper{
+  background-image: linear-gradient(to bottom, #88c1f9, #6c9dd0, #507ba8, #345b82, #193c5e) !important;
+}
+.css-hyum1k-MuiToolbar-root{
+  background-image: linear-gradient(to right, #88c1f9, #6c9dd0, #507ba8, #345b82, #193c5e) !important;
+}
+
+.MuiTableHead-root{
+  background-image: linear-gradient(to right, #88c1f9, #6c9dd0, #507ba8, #345b82, #193c5e) !important;
+}
+.MuiTableCell-head{
+  background-color: transparent !important;
+  font-family:NeueMachina-Regular;
+    font-weight: bold;
+    font-size:1.1em !important;
+}
+
+tr:hover { 
+  >td{
+  color:#429af1;  
+  }
+}
+
+tr {
+  >td{
+    font-family:NeueMachina-Regular;
+    font-weight: bold;
+    font-size:1.1em !important;
+  }
+}
+
+.css-1jo1f9u-MuiButtonBase-root-MuiIconButton-root{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+
+//Event
+
+.event-name{
+  font-family:NeueMachina-UltraBold;
+  color:#0b323f !important;
+}
+.event-details{
+  font-family:NeueMachina-Regular;
+  color:rgb(78, 112, 128);
+}
+.guide-details{
+  font-family:NeueMachina-Regular;
+  color:rgb(78, 112, 128) !important;
+}
+.event-description{
+  font-family:AutumnDays-PersonalUse-Regular !important;
+  font-size: 1.7em;
+  color:rgb(78, 112, 128) !important;
+ 
+}
+.event-title{
+  font-family:NeueMachina-UltraBold !important;
+  color:#0b323f;
+}
+
+@media (max-width: 767px) {
+  .event-column-container{
+    flex-direction: row !important;
+  }
+  .event-left-column{
+    width: 100% !important;
+  }
+  .event-right-column{
+    width: 100% !important;
+  }
+  .event-content-container{
+    height: 100% !important;
+    box-sizing: border-box;
+    padding: 50px;
+  }
+}
+
+//allevents
+.allevents{
+  width: 100% !important;
+}
+
+  .alleventswrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .allevents-wrap{
+    margin-top: 100px;
+  }
+.all-events-container{
+  margin-top: 100px !important;
+  width: 100vw !important;
+}
+.all-events-row{
+  width: 100% !important;
+}
+
+.page-header-work {
+  &.allEvents {
+    background-image: url(../../../../public/Images/Hiking/nathan-dumlao-pLoMDKtl-JY-unsplash-min.jpg);
+    background-attachment: fixed;
+    background-position-y: -300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+
+    h1,
+    h3 {
+      color: white;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      margin-left: 100px;
+      font-family:NeueMachina-UltraBold !important;
+    }
+
+    h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    font-family:ShapiroLight !important;
+    }
+  }
+}
+.hr-lines{
+  position: relative;
+  /*  new lines  */
+  // max-width: 500px;
+  // margin: 100px auto;
+  // text-align: center;
+}
+
+
+.hr-lines:before{
+  content:" ";
+  display: block;
+  height: 4px;
+  width: 130px;
+  position: absolute;
+  left: -155px;
+  background: rgb(255, 255, 255);
+}
+// .hr-lines:after{
+//   content:" ";
+//   height: 2px;
+//   width: 130px;
+//   background: red;
+//   display: block;
+//   position: absolute;
+//   top: 50%;
+//   right: 0;
+// }
+.df{
+  display: flex;
+  flex-direction: row;
+}
+.border{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4px;
+  background-color: white;
+  width: 90%;
+}
+
+

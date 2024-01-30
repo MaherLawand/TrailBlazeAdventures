@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ActivityClubPortal.API.props" />
+</Project>

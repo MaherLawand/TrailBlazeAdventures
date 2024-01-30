@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\ActivityClubPortal.API",
+    "\\ActivityClubPortal.API\\Controllers",
+    "\\ActivityClubPortal.Core",
+    "\\ActivityClubPortal.Core\\Interfaces",
+    "\\ActivityClubPortal.Core\\Models",
+    "\\ActivityClubPortal.Core\\Repositories",
+    "\\ActivityClubPortal.Services",
+    "\\ActivityClubPortal.Services\\Interfaces",
+    "\\ActivityClubPortal.Services\\Services"
+  ],
+  "SelectedNode": "\\ActivityClubPortal.Core\\Models\\Member.cs",
+  "PreviewInSolutionExplorer": false
+}
